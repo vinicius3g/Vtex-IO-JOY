@@ -7,21 +7,12 @@
   },
   "header-layout.desktop": {
     "children": [
-      "header-row#1-desktop",
-      "header-row#2-desktop",
-      "header-row#3-desktop",
+      "header-row#notification-desktop",
+      "header-row#main-desktop",
       "header-row#4-desktop"
     ]
   },
-
-  "header-row#1-desktop": {
-    "children": ["telemarketing"],
-    "props": {
-      "fullWidth": true
-    }
-  },
-
-  "header-row#2-desktop": {
+  "header-row#notification-desktop": {
     "children": ["notification.bar#home"],
     "props": {
       "fullWidth": "true"
@@ -29,30 +20,32 @@
   },
   "notification.bar#home": {
     "props": {
-      "content": "SELECTED ITEMS ON SALE! CHECK IT OUT!"
+      "content": "FREE SHIPPING OVER £75 & FREE RETURNS ",
+      "blockClass":"notification-message"
     }
   },
-  "header-row#3-desktop": {
+
+  "header-row#main-desktop": {
     "children": [
-      "vtex.menu@2.x:menu#websites",
+      "search-bar",
       "header-spacer",
-      "vtex.menu@2.x:menu#institutional"
+      "logo#desktop",
+      "header-spacer",
+      "login",
+      "minicart.v2"
     ],
     "props": {
-      "blockClass": "menu-link",
+      "blockClass": "main-header",
       "inverted": "true"
     }
   },
+
   "header-row#4-desktop": {
     "children": [
-      "logo#desktop",
-      "vtex.menu@2.x:menu#category-menu",
+      "menu#category-menu",
       "header-spacer",
-      "header-spacer",
-      "search-bar",
-      "locale-switcher",
-      "login",
-      "minicart.v2"
+      "locale-switcher"
+      
     ],
     "props": {
       "sticky": true,
@@ -63,16 +56,31 @@
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo.png",
-      "width": "180"
+      "url": "/arquivos/logo-image.png",
+      "width": "180",
+      "blockClass":"logo-main-header"
     }
   },
+
+  "login": {
+    "props": {
+      "showIconProfile":true,
+      "emailAndPasswordTitle": "LOG-IN",
+      "accessCodeTitle": "Acess Code LOG-IN",
+      "emailPraceholder": "e-mail",
+      "passwordPlaceholder": "password",
+      "showPasswordVerificationIntoTooltip": true
+    }
+  },
+
   "header-layout.mobile": {
     "children": ["header-row#1-mobile"]
   },
   "header-row#1-mobile": {
     "children": [
       "drawer",
+      "header-spacer",
+      "header-spacer",
       "logo#mobile",
       "header-spacer",
       "login",
@@ -89,9 +97,13 @@
 
   "menu#drawer": {
     "children": [
-      "menu-item#category-apparel",
-      "menu-item#category-home",
-      "menu-item#more"
+      "menu-item#category-new-in",
+      "menu-item#category-womanswear",
+      "menu-item#category-meanswear",
+      "menu-item#category-acessories",
+      "menu-item#category-homeandgifs",
+      "menu-item#category-sale",
+      "menu-item#category-outlet"
     ],
     "props": {
       "orientation": "vertical"
@@ -102,7 +114,7 @@
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo-mobile.png",
+      "url":  "/arquivos/logo-image.png",
       "width": "70"
     }
   }
