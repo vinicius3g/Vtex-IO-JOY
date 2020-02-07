@@ -4,7 +4,7 @@
 }
 
 .headerRow--main-header .headerRowBackground {
-  background-color: #F0F0F0;
+  background-color: #ffffff;
 }
 
 .headerRow--main-header :global(.vtex-menu-2-x-styledLink)  {
@@ -15,4 +15,19 @@
 .headerRow--main-header-mobile .headerRowBackground {
   padding: 10px 0px;
   background-color: #F0F0F0;
+}
+
+.headerStickyRow--menu-header{
+  display: flex;
+  justify-content: center;
+}
+
+.headerStickyRow--menu-header :global(.vtex-menu-2-x-styledLink){
+  font-family: 'Raleway',sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 0.4;
+  letter-spacing: 1.8px;
+  text-align: center;
+  color: #000000;
 }

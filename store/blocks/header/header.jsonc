@@ -7,21 +7,12 @@
   },
   "header-layout.desktop": {
     "children": [
-      "header-row#1-desktop",
-      "header-row#2-desktop",
-      "header-row#3-desktop",
+      "header-row#notification-desktop",
+      "header-row#main-desktop",
       "header-row#4-desktop"
     ]
   },
-
-  "header-row#1-desktop": {
-    "children": ["telemarketing"],
-    "props": {
-      "fullWidth": true
-    }
-  },
-
-  "header-row#2-desktop": {
+  "header-row#notification-desktop": {
     "children": ["notification.bar#home"],
     "props": {
       "fullWidth": "true"
@@ -29,50 +20,90 @@
   },
   "notification.bar#home": {
     "props": {
-      "content": "SELECTED ITEMS ON SALE! CHECK IT OUT!"
+      "content": "FREE SHIPPING OVER £75 & FREE RETURNS ",
+      "blockClass":"notification-message"
     }
   },
-  "header-row#3-desktop": {
+
+  "header-row#main-desktop": {
     "children": [
-      "vtex.menu@2.x:menu#websites",
-      "header-spacer",
-      "vtex.menu@2.x:menu#institutional"
-    ],
-    "props": {
-      "blockClass": "menu-link",
-      "inverted": "true"
-    }
-  },
-  "header-row#4-desktop": {
-    "children": [
-      "logo#desktop",
-      "vtex.menu@2.x:menu#category-menu",
-      "header-spacer",
-      "header-spacer",
       "search-bar",
-      "locale-switcher",
+      "header-spacer",
+      "logo#desktop",
+      "header-spacer",
       "login",
       "minicart.v2"
     ],
     "props": {
-      "sticky": true,
-      "blockClass": "main-header"
+      "blockClass": "main-header",
+      "inverted": "true"
     }
   },
+
+  "header-row#4-desktop": {
+    "children": [
+      "menu#category-menu",
+      "header-spacer",
+      "locale-switcher"
+      
+    ],
+    "props": {
+      "sticky": true,
+      "blockClass": "menu-header"
+    }
+  },
+
+  "search-bar": {
+    "props": {
+      "openAutocompleteOnFocus": true,
+      "blockClass":"search-header"
+    }
+  },
+
   "logo#desktop": {
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo.png",
-      "width": "180"
+      "url": "/arquivos/logo-image.png",
+      "width": "180",
+      "blockClass":"logo-main-header"
     }
   },
-  "header-layout.mobile": {
-    "children": ["header-row#1-mobile"]
+
+  "login": {
+    "props": {
+      "emailAndPasswordTitle": "LOG-IN",
+      "accessCodeTitle": "Acess Code LOG-IN",
+      "emailPraceholder": "e-mail",
+      "passwordPlaceholder": "password",
+      "showPasswordVerificationIntoTooltip": true
+    }
   },
-  "header-row#1-mobile": {
+
+  "header-layout.mobile": {
+    "children": [
+      "header-row#1-mobile",
+      "header-row#2-mobile",
+      "search-bar#mobile"
+    ]
+  },
+  "header-row#1-mobile":{
+    "children":[
+      "notification.bar#mobile"
+    ]
+  },
+  "notification.bar#mobile": {
+    "props": {
+      "content": "FREE SHIPPING OVER £75 & FREE RETURNS ",
+      "blockClass":"notification-message"
+    }
+  },
+
+  "header-row#2-mobile": {
     "children": [
       "drawer",
+      "header-spacer",
+      "header-spacer",
       "logo#mobile",
       "header-spacer",
       "login",
@@ -89,9 +120,13 @@
 
   "menu#drawer": {
     "children": [
-      "menu-item#category-apparel",
-      "menu-item#category-home",
-      "menu-item#more"
+      "menu-item#category-new-in",
+      "menu-item#category-womanswear",
+      "menu-item#category-meanswear",
+      "menu-item#category-acessories",
+      "menu-item#category-homeandgifs",
+      "menu-item#category-sale",
+      "menu-item#category-outlet"
     ],
     "props": {
       "orientation": "vertical"
@@ -102,8 +137,14 @@
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo-mobile.png",
+      "url":  "/arquivos/logo-image.png",
       "width": "70"
+    }
+  },
+  "search-bar#mobile": {
+    "props": {
+      "openAutocompleteOnFocus": true,
+      "blockClass":"search-mobile"
     }
   }
 }
