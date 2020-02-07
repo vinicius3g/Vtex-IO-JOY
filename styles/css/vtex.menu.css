@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+.menuContainerNav--menu-mobile{
+    width: 100%;
+}
+
+.styledLink--menu-item-category{
+    font-family: 'Raleway',sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 3;
+    color: #000;
+    letter-spacing: 1.6px;
+}

@@ -1,26 +1,33 @@
 {
   "header": {
-    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+    "blocks": [
+      "header-layout.desktop",
+      "header-layout.mobile"
+      ]
   },
   "header.full": {
-    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+    "blocks": [
+      "header-layout.desktop",
+      "header-layout.mobile"
+    ]
   },
   "header-layout.desktop": {
     "children": [
-      "header-row#notification-desktop",
+      "rich-text#notification-bar",
       "header-row#main-desktop",
       "header-row#4-desktop"
     ]
   },
   "header-row#notification-desktop": {
-    "children": ["notification.bar#home"],
+    "children": ["rich-text#notification-bar"],
     "props": {
       "fullWidth": "true"
     }
   },
-  "notification.bar#home": {
+  "rich-text#notification-bar": {
     "props": {
-      "content": "FREE SHIPPING OVER £75 & FREE RETURNS ",
+      "text": "FREE SHIPPING OVER £75 & FREE RETURNS ",
+      "textAlignment":"center",
       "blockClass":"notification-message"
     }
   },
@@ -30,8 +37,8 @@
       "search-bar",
       "header-spacer",
       "logo#desktop",
-      "header-spacer",
-      "login",
+      "header-spacer",  
+      "login#desktop",
       "minicart.v2"
     ],
     "props": {
@@ -70,47 +77,103 @@
     }
   },
 
-  "login": {
+  "login#desktop": {
     "props": {
       "emailAndPasswordTitle": "LOG-IN",
       "accessCodeTitle": "Acess Code LOG-IN",
       "emailPraceholder": "e-mail",
       "passwordPlaceholder": "password",
-      "showPasswordVerificationIntoTooltip": true
+      "showPasswordVerificationIntoTooltip": true,
+      "blockClass":"button-header"
     }
   },
+
+    "minicart.v2": {
+      "children": ["minicart-base-content"]
+    },
+    "minicart-base-content": {
+      "blocks": ["minicart-empty-state"],
+      "children": ["minicart-product-list", "sticky-layout#minicart-footer"]
+    },
+    "sticky-layout#minicart-footer": {
+      "children": ["minicart-summary", "minicart-checkout-button"]
+    },
+    "minicart-product-list": {
+      "blocks": ["product-list#minicart"]
+    },
+    "product-list#minicart": {
+      "blocks": ["product-list-content-mobile"]
+    },
+    "minicart-summary": {
+      "blocks": ["checkout-summary.compact#minicart"]
+    },
+  
+    "checkout-summary.compact#minicart": {
+      "children": ["summary-totalizers#minicart"],
+      "props": {
+        "totalizersToShow": ["Items", "Discounts"]
+      }
+    },
+    "summary-totalizers#minicart": {
+      "props": {
+        "showTotal": true,
+        "showDeliveryTotal": false
+      }
+    },
+    "minicart-empty-state": {
+      "children": ["flex-layout.row#empty-state"]
+    },
+    "flex-layout.row#empty-state": {
+      "children": ["flex-layout.col#empty-state"]
+    },
+    "flex-layout.col#empty-state": {
+      "children": ["rich-text#empty-state"]
+    },
+    "rich-text#empty-state": {
+      "props": {
+        "text": "Your cart is empty!"
+      }
+    },
+  
+
+
 
   "header-layout.mobile": {
     "children": [
-      "header-row#1-mobile",
-      "header-row#2-mobile",
-      "search-bar#mobile"
+      "header-row#notification-bar-mobile",
+      "header-row#main-header-mobile",
+      "header-row#search-header-mobile"
     ]
   },
-  "header-row#1-mobile":{
+
+  "header-row#notification-bar-mobile":{
     "children":[
-      "notification.bar#mobile"
-    ]
+      "rich-text#notification-bar-mobile"
+    ],
+    "props":{
+      "blockClass":"notification-mobile"
+    }
   },
-  "notification.bar#mobile": {
+  
+  "rich-text#notification-bar-mobile": {
     "props": {
-      "content": "FREE SHIPPING OVER £75 & FREE RETURNS ",
-      "blockClass":"notification-message"
+      "text": "FREE SHIPPING OVER £75 & FREE RETURNS ",
+      "textAlignment":"center",
+      "blockClass":"notification-message-mobile"
     }
   },
 
-  "header-row#2-mobile": {
+  "header-row#main-header-mobile": {
     "children": [
       "drawer",
       "header-spacer",
       "header-spacer",
       "logo#mobile",
       "header-spacer",
-      "login",
+      "login#mobile",
       "minicart.v2"
     ],
     "props": {
-      "sticky": true,
       "blockClass": "main-header-mobile"
     }
   },
@@ -126,21 +189,63 @@
       "menu-item#category-acessories",
       "menu-item#category-homeandgifs",
       "menu-item#category-sale",
-      "menu-item#category-outlet"
+      "header-row#log-cart-mobile"
+      
     ],
     "props": {
-      "orientation": "vertical"
+      "orientation": "vertical",
+      "blockClass":"menu-mobile"
     }
   },
 
+  "header-row#log-cart-mobile":{
+      "children":[
+        "login#menu-mobile",
+        "header-spacer",
+        "minicart.v2"
+      ],
+      "props":{
+        "blockClass":"log-cart-mobile"
+      }
+  },
+  
   "logo#mobile": {
     "props": {
+      "blockClass":"logo-mobile",
       "title": "Logo",
       "href": "/",
       "url":  "/arquivos/logo-image.png",
-      "width": "70"
+      "width": "180"
     }
   },
+  "login#menu-mobile": {
+    "props": {
+      "emailPraceholder": "e-mail",
+      "passwordPlaceholder": "password",
+      "showPasswordVerificationIntoTooltip": true,
+      "blockClass":"login-button-mobile"
+    }
+  },
+  "login#mobile": {
+    "props": {
+      "emailAndPasswordTitle": "LOG-IN",
+      "accessCodeTitle": "Acess Code LOG-IN",
+      "emailPraceholder": "e-mail",
+      "passwordPlaceholder": "password",
+      "showPasswordVerificationIntoTooltip": true,
+      "blockClass":"login-button-mobile"
+    }
+  },
+
+  "header-row#search-header-mobile":{
+    "children":[
+      "search-bar#mobile"
+    ],
+    "props":{
+      "blockClass":"search-header"
+    }
+  },
+
   "search-bar#mobile": {
     "props": {
       "openAutocompleteOnFocus": true,

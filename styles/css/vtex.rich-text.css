@@ -1,3 +1,13 @@
+.container--notification-message{
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+  font-family: 'Raleway',sans-serif;
+  font-weight: 700;
+  color: #000000;
+  background-color: #fff;
+}
+
 .container--deals {
   color: #ffffff;
   text-align: center;
@@ -76,5 +86,19 @@
 
   .container--title .paragraph {
     line-height: 1.3em;
+  }
+}
+
+@media only screen and (max-width:425px) {
+  .container--notification-message-mobile {
+    font-size: 12px;
+    font-family: 'Raleway',sans-serif;
+    font-weight: 700;
+    color: #000;
+    min-height: 3rem;
+    box-sizing: border-box;
+  }
+  .paragraph--notification-message-mobile{
+    line-height: normal;
   }
 }

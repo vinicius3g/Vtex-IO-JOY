@@ -1,37 +1,33 @@
 {
   "menu#category-menu": {
     "children": [
-      "header-spacer",
-      "header-spacer",
       "menu-item#category-new-in",
       "menu-item#category-womanswear",
       "menu-item#category-meanswear",
       "menu-item#category-acessories",
       "menu-item#category-homeandgifs",
-      "menu-item#category-sale",
-      "menu-item#category-outlet"
-      
+      "menu-item#category-sale"
     ]
   },
   "menu-item#category-new-in": {
     "props": {
-      "id": "menu-item-category-new-in",
+      "blockClass": "menu-item-category",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/apparel---accessories/",
+        "href": "/",
         "noFollow": false,
         "tagTitle": "New In",
         "text": "New In"
       }
     },
     "blocks": [
-      "submenu#category-apparel"
+      "submenu#category-new-in"
     ]
   },
-  "submenu#category-apparel": {
+  "submenu#category-new-in": {
     "props": {
       "width": "auto"
     },
@@ -51,7 +47,7 @@
   },
   "menu-item#category-apparel-clothing": {
     "props": {
-      "id": "menu-item-category-apparel-clothing",
+      "blockClass": "menu-item-category-apparel-clothing",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -66,7 +62,7 @@
   },
   "menu-item#category-apparel-accessories": {
     "props": {
-      "id": "menu-item-category-apparel-accessories",
+      "blockClass": "menu-item-category-apparel-accessories",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -81,7 +77,7 @@
   },
   "menu-item#category-apparel-eyeglasses": {
     "props": {
-      "id": "menu-item-category-apparel-eyeglasses",
+      "blockClass": "menu-item-category-apparel-eyeglasses",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -95,14 +91,9 @@
     }
   },
 
-
-
-
-
-
   "menu-item#category-womanswear": {
     "props": {
-      "id": "menu-item-category-home",
+      "blockClass": "menu-item-category",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -117,7 +108,7 @@
   },
   "menu-item#category-meanswear": {
     "props": {
-      "id": "menu-item-category-home",
+      "blockClass": "menu-item-category",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -132,37 +123,7 @@
   },
   "menu-item#category-acessories": {
     "props": {
-      "id": "menu-item-category-home",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/home---decor/",
-        "noFollow": false,
-        "tagTitle": "Home & Decor",
-        "text": "Home & Decor"
-      }
-    }
-  },
-  "menu-item#category-homeandgifs": {
-    "props": {
-      "id": "menu-item-category-home",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/home---decor/",
-        "noFollow": false,
-        "tagTitle": "Home & Decor",
-        "text": "Home & Decor"
-      }
-    }
-  },
-  "menu-item#category-sale": {
-    "props": {
-      "id": "menu-item-category-home",
+      "blockClass": "menu-item-category",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -175,9 +136,9 @@
       }
     }
   },
-  "menu-item#category-outlet": {
+  "menu-item#category-homeandgifs": {
     "props": {
-      "id": "menu-item-category-home",
+      "blockClass": "menu-item-category",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -185,14 +146,30 @@
         "type": "internal",
         "href": "/home---decor/",
         "noFollow": false,
-        "tagTitle": "Outlet",
-        "text": "Outlet"
+        "tagTitle": "Home & Gifts",
+        "text": "Home & Gifts"
       }
     }
   },
+  "menu-item#category-sale": {
+    "props": {
+      "blockClass": "menu-item-category",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/home---decor/",
+        "noFollow": false,
+        "tagTitle": "Sale",
+        "text": "Sale"
+      }
+    }
+  },
+
   "menu-item#more": {
     "props": {
-      "id": "menu-item-custom-sale",
+      "blockClass": "menu-item-custom-sale",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -205,10 +182,10 @@
       }
     },
     "blocks": [
-      "vtex.menu@2.x:submenu#more"
+      "submenu#more"
     ]
   },
-  "vtex.menu@2.x:submenu#more": {
+  "submenu#more": {
     "props": {
       "width": "100%"
     },
@@ -224,7 +201,7 @@
   },
   "flex-layout.col#menu-more-1": {
     "children": [
-      "vtex.menu@2.x:menu#more"
+      "menu#more"
     ]
   },
   "flex-layout.col#menu-more-2": {
@@ -232,7 +209,7 @@
       "info-card#home"
     ]
   },
-  "vtex.menu@2.x:menu#more": {
+  "menu#more": {
     "props": {
       "orientation": "vertical"
     },
@@ -242,7 +219,7 @@
   },
   "menu-item#about-us": {
     "props": {
-      "id": "menu-item-about-us",
+      "blockClass": "menu-item-about-us",
       "type": "custom",
       "iconId": null,
       "highlight": false,

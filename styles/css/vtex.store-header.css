@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:700&display=swap');
+
 .headerRow--menu-link :global(.vtex-menu-2-x-styledLink) {
   color: #ffffff;
   font-size: 14px;
@@ -10,11 +12,6 @@
 .headerRow--main-header :global(.vtex-menu-2-x-styledLink)  {
   color: #727273;
   font-size: 14px;
-}
-
-.headerRow--main-header-mobile .headerRowBackground {
-  padding: 10px 0px;
-  background-color: #F0F0F0;
 }
 
 .headerStickyRow--menu-header{
@@ -30,4 +27,30 @@
   letter-spacing: 1.8px;
   text-align: center;
   color: #000000;
+}
+
+@media only screen and (max-width:425px){
+  .headerRowContainer--notification-mobile{
+    display: flex;
+    justify-content: center;
+  }
+
+  .headerRowBackground--main-header-mobile{
+    background-color: #ffffff;
+  }
+
+  .headerRowBackground--search-header{
+    background-color: #dcdcdc;
+    max-height: 40px;
+  }
+  .headerRowContainer--search-header{
+    justify-content: center;
+  }
+  .headerRowContainer--log-cart-mobile{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 25px 25px 0;
+  }
+  
 }

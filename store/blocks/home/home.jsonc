@@ -19,7 +19,7 @@
       "banners": [
         {
           "image": "https://storecomponents.vteximg.com.br/arquivos/banner-principal.png",
-          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+          "mobileImage": "/arquivos/hero-banner.jpg"
         },
         {
           "image": "https://storecomponents.vteximg.com.br/arquivos/banner.jpg",
