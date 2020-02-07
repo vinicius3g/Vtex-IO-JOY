@@ -1,20 +1,25 @@
 .notificationBarContainer {
-  font-family: 'Raleway',sans-serif;
   font-size: 12px;
-  font-weight: 600;
-  line-height: 0.6;
-  letter-spacing: 2.4px;
-  text-align: center;
-  background-color: #ffffff;
+  font-family: 'Raleway',sans-serif;
+  font-weight: 700;
   color: #000000;
+  background-color: #fff;
 }
+:global(.vtex-input-prefix__group){
+  border: 1px solid #000000;
+  border-radius: 0;
+  color: #000;
+  font-family: 'Raleway',sans-serif;
+}
+
 .logoImage--logo-main-header {
   width: 90px;
   height: 90px;
 }
 
 .searchBarContainer {
-  max-width: 265px;
+  max-width: 300px;
+  align-self: flex-start;
 }
 
 .infoCardContainer--info-card-home {

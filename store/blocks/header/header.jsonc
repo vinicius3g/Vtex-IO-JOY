@@ -49,9 +49,17 @@
     ],
     "props": {
       "sticky": true,
-      "blockClass": "main-header"
+      "blockClass": "menu-header"
     }
   },
+
+  "search-bar": {
+    "props": {
+      "openAutocompleteOnFocus": true,
+      "blockClass":"search-header"
+    }
+  },
+
   "logo#desktop": {
     "props": {
       "title": "Logo",
@@ -64,7 +72,6 @@
 
   "login": {
     "props": {
-      "showIconProfile":true,
       "emailAndPasswordTitle": "LOG-IN",
       "accessCodeTitle": "Acess Code LOG-IN",
       "emailPraceholder": "e-mail",
@@ -74,9 +81,25 @@
   },
 
   "header-layout.mobile": {
-    "children": ["header-row#1-mobile"]
+    "children": [
+      "header-row#1-mobile",
+      "header-row#2-mobile",
+      "search-bar#mobile"
+    ]
   },
-  "header-row#1-mobile": {
+  "header-row#1-mobile":{
+    "children":[
+      "notification.bar#mobile"
+    ]
+  },
+  "notification.bar#mobile": {
+    "props": {
+      "content": "FREE SHIPPING OVER £75 & FREE RETURNS ",
+      "blockClass":"notification-message"
+    }
+  },
+
+  "header-row#2-mobile": {
     "children": [
       "drawer",
       "header-spacer",
@@ -116,6 +139,12 @@
       "href": "/",
       "url":  "/arquivos/logo-image.png",
       "width": "70"
+    }
+  },
+  "search-bar#mobile": {
+    "props": {
+      "openAutocompleteOnFocus": true,
+      "blockClass":"search-mobile"
     }
   }
 }
