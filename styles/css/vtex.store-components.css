@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:700&display=swap');
 
 :global(.vtex-input-prefix__group){
   border: 1px solid #000000;
@@ -7,8 +8,8 @@
 }
 
 .logoImage--logo-main-header {
-  width: 90px;
-  height: 90px;
+  max-width: 90px;
+  max-height: 90px;
 }
 
 .searchBarContainer {
@@ -98,14 +99,13 @@
   }
 }
 
-@media only screen and (max-width:425px){
-  .container{
-    padding: 0 15px;
-  }
-
+@media only screen and (max-width:1024px){
   .logoImage--logo-mobile{
     max-width: 40px;
     max-height: 40px;
+  }
+  .container{
+    padding: 0 15px;
   }
 
   .searchBarContainer{

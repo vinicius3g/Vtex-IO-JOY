@@ -15,7 +15,7 @@
     "children": [
       "rich-text#notification-bar",
       "header-row#main-desktop",
-      "header-row#4-desktop"
+      "header-row#menu-desktop"
     ]
   },
   "header-row#notification-desktop": {
@@ -36,7 +36,10 @@
     "children": [
       "search-bar",
       "header-spacer",
+      "header-spacer",
       "logo#desktop",
+      "header-spacer",  
+      "header-spacer",  
       "header-spacer",  
       "login#desktop",
       "minicart.v2"
@@ -47,8 +50,9 @@
     }
   },
 
-  "header-row#4-desktop": {
+  "header-row#menu-desktop": {
     "children": [
+      "header-spacer",
       "menu#category-menu",
       "header-spacer",
       "locale-switcher"
@@ -135,9 +139,6 @@
       }
     },
   
-
-
-
   "header-layout.mobile": {
     "children": [
       "header-row#notification-bar-mobile",
@@ -168,7 +169,9 @@
       "drawer",
       "header-spacer",
       "header-spacer",
+      "header-spacer",
       "logo#mobile",
+      "header-spacer",
       "header-spacer",
       "login#mobile",
       "minicart.v2"

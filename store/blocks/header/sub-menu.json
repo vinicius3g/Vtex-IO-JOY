@@ -1,0 +1,89 @@
+{
+    "submenu#category-womanswear": {
+        "props": {
+        "width": "100%"
+        },
+        "children": [
+        "menu#category"
+        ]
+    },
+
+    "menu#category": {
+        "props": {
+        "orientation": "horizontal"
+        },
+
+        "children": [
+        "menu-item#category-apparel-clothing",
+        "menu-item#category-apparel-accessories",
+        "menu-item#category-apparel-eyeglasses"
+        ]
+    },
+
+    "menu-item#category-apparel-clothing": {
+        "props": {
+        "blockClass": "menu-item-category-apparel-clothing",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+        "type": "internal",
+        "href": "/apparel---accessories/clothing/",
+        "noFollow": false,
+        "tagTitle": "Clothing",
+        "text": "Calça"
+        }
+        },
+        "blocks": [
+            "submenu#category-clothing"
+        ]
+        
+    },
+
+    "submenu#category-clothing": {
+        "props": {
+        "blockClass": "menu-item-category-apparel-accessories",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+            "itemProps": {
+            "type": "internal",
+            "href": "/apparel---accessories/accessories/",
+            "noFollow": false,
+            "tagTitle": "Accessories",
+            "text": "Accessories"
+            }
+        }
+    },
+    "menu-item#category-apparel-accessories": {
+        "props": {
+        "blockClass": "menu-item-category-apparel-accessories",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+            "itemProps": {
+            "type": "internal",
+            "href": "/apparel---accessories/accessories/",
+            "noFollow": false,
+            "tagTitle": "Accessories",
+            "text": "Accessories"
+            }
+        }
+    },
+
+    "menu-item#category-apparel-eyeglasses": {
+        "props": {
+        "blockClass": "menu-item-category-apparel-eyeglasses",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+            "type": "internal",
+            "href": "/apparel---accessories/eyeglasses/",
+            "noFollow": false,
+            "tagTitle": "Eyeglasses",
+            "text": "Eyeglasses"
+        }
+    }
+    }
+}

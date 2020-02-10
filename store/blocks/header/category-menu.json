@@ -9,6 +9,7 @@
       "menu-item#category-sale"
     ]
   },
+
   "menu-item#category-new-in": {
     "props": {
       "blockClass": "menu-item-category",
@@ -22,75 +23,9 @@
         "tagTitle": "New In",
         "text": "New In"
       }
-    },
-    "blocks": [
-      "submenu#category-new-in"
-    ]
-  },
-  "submenu#category-new-in": {
-    "props": {
-      "width": "auto"
-    },
-    "children": [
-      "menu#category-apparel"
-    ]
-  },
-  "menu#category-apparel": {
-    "props": {
-      "orientation": "vertical"
-    },
-    "children": [
-      "menu-item#category-apparel-clothing",
-      "menu-item#category-apparel-accessories",
-      "menu-item#category-apparel-eyeglasses"
-    ]
-  },
-  "menu-item#category-apparel-clothing": {
-    "props": {
-      "blockClass": "menu-item-category-apparel-clothing",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/apparel---accessories/clothing/",
-        "noFollow": false,
-        "tagTitle": "Clothing",
-        "text": "Clothing"
-      }
     }
   },
-  "menu-item#category-apparel-accessories": {
-    "props": {
-      "blockClass": "menu-item-category-apparel-accessories",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/apparel---accessories/accessories/",
-        "noFollow": false,
-        "tagTitle": "Accessories",
-        "text": "Accessories"
-      }
-    }
-  },
-  "menu-item#category-apparel-eyeglasses": {
-    "props": {
-      "blockClass": "menu-item-category-apparel-eyeglasses",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/apparel---accessories/eyeglasses/",
-        "noFollow": false,
-        "tagTitle": "Eyeglasses",
-        "text": "Eyeglasses"
-      }
-    }
-  },
-
+ 
   "menu-item#category-womanswear": {
     "props": {
       "blockClass": "menu-item-category",
@@ -104,8 +39,12 @@
         "tagTitle": "WomansWear",
         "text": "WomansWear"
       }
-    }
+    },
+    "blocks": [
+      "submenu#category-womanswear"
+    ]
   },
+
   "menu-item#category-meanswear": {
     "props": {
       "blockClass": "menu-item-category",
@@ -121,6 +60,7 @@
       }
     }
   },
+
   "menu-item#category-acessories": {
     "props": {
       "blockClass": "menu-item-category",
@@ -136,6 +76,7 @@
       }
     }
   },
+
   "menu-item#category-homeandgifs": {
     "props": {
       "blockClass": "menu-item-category",
@@ -151,6 +92,7 @@
       }
     }
   },
+
   "menu-item#category-sale": {
     "props": {
       "blockClass": "menu-item-category",
@@ -185,6 +127,7 @@
       "submenu#more"
     ]
   },
+
   "submenu#more": {
     "props": {
       "width": "100%"
@@ -217,19 +160,19 @@
       "menu-item#about-us"
     ]
   },
-  "menu-item#about-us": {
-    "props": {
+"menu-item#about-us": {
+  "props": {
       "blockClass": "menu-item-about-us",
       "type": "custom",
       "iconId": null,
       "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/about-us",
-        "noFollow": true,
-        "tagTitle": "About us",
-        "text": "About us"
-      }
+         "itemProps": {
+          "type": "internal",
+          "href": "/about-us",
+          "noFollow": true,
+          "tagTitle": "About us",
+          "text": "About us"
+       }
     }
-  }
+ }
 }

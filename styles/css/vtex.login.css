@@ -1,24 +1,44 @@
 :global(.vtex-login-2-x-label){
     font-size: 0;
 }
+.container{
+    align-self: flex-start;
+    padding: .75rem 0; 
+}
 
 .container :global(.vtex-button){
-    width: 24px;
-    height: 27px;
     background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 181.25 172.59'%3E%3Cg data-name='Camada 2'%3E%3Cg data-name='Camada 1'%3E%3Cpath d='M90.43 172.59H9.07c-7.44 0-9.37-2.05-9-9.35a60.64 60.64 0 0159.57-57.8c21.73-.38 43.51-.58 65.22.34 30.93 1.3 56.08 28.27 56.42 59.25.06 5.14-2.45 7.55-8 7.55zm77.19-13a6.1 6.1 0 00.09-1.2c-3.32-21.78-22.09-39.29-44.15-39.94-21.47-.64-43-.3-64.45-.19a44.16 44.16 0 00-26.48 9.1 47.48 47.48 0 00-19.34 32.23zM138.73 48.4a48.46 48.46 0 11-96.92-.22C41.79 21.6 63.6 0 90.4 0a48.23 48.23 0 0148.33 48.4zm-12.82-.13a35.58 35.58 0 00-35.5-35.55C70.76 12.69 54.65 28.57 54.6 48a35.66 35.66 0 1071.31.25z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")no-repeat;
 }
 
 .container :global(.vtex-button){
     width: 53px;
     height: 15px;
+    background-size: 30px;
+    background-position-x: 9px;
+    background-position-y: 5px;
 }
-@media only screen and (max-width:425px){
+
+@media only screen and (max-width:640px){
+    .container{
+        align-self: center;
+    }
+    
     :global(.vtex-login-2-x-buttonLink){
-        height: 27px;
         width: 28px;
+        height: 27px;
         background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 181.25 172.59'%3E%3Cg data-name='Camada 2'%3E%3Cg data-name='Camada 1'%3E%3Cpath d='M90.43 172.59H9.07c-7.44 0-9.37-2.05-9-9.35a60.64 60.64 0 0159.57-57.8c21.73-.38 43.51-.58 65.22.34 30.93 1.3 56.08 28.27 56.42 59.25.06 5.14-2.45 7.55-8 7.55zm77.19-13a6.1 6.1 0 00.09-1.2c-3.32-21.78-22.09-39.29-44.15-39.94-21.47-.64-43-.3-64.45-.19a44.16 44.16 0 00-26.48 9.1 47.48 47.48 0 00-19.34 32.23zM138.73 48.4a48.46 48.46 0 11-96.92-.22C41.79 21.6 63.6 0 90.4 0a48.23 48.23 0 0148.33 48.4zm-12.82-.13a35.58 35.58 0 00-35.5-35.55C70.76 12.69 54.65 28.57 54.6 48a35.66 35.66 0 1071.31.25z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")no-repeat;
     }
-    :global(.vtex-login-2-x-container ){
-        margin-right: 65px;
+}
+
+@media only screen and (max-width:425px){
+    .container{
+        align-self: center;
     }
+
+    :global(.vtex-login-2-x-buttonLink){
+        width: 28px;
+        height: 27px;
+        background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 181.25 172.59'%3E%3Cg data-name='Camada 2'%3E%3Cg data-name='Camada 1'%3E%3Cpath d='M90.43 172.59H9.07c-7.44 0-9.37-2.05-9-9.35a60.64 60.64 0 0159.57-57.8c21.73-.38 43.51-.58 65.22.34 30.93 1.3 56.08 28.27 56.42 59.25.06 5.14-2.45 7.55-8 7.55zm77.19-13a6.1 6.1 0 00.09-1.2c-3.32-21.78-22.09-39.29-44.15-39.94-21.47-.64-43-.3-64.45-.19a44.16 44.16 0 00-26.48 9.1 47.48 47.48 0 00-19.34 32.23zM138.73 48.4a48.46 48.46 0 11-96.92-.22C41.79 21.6 63.6 0 90.4 0a48.23 48.23 0 0148.33 48.4zm-12.82-.13a35.58 35.58 0 00-35.5-35.55C70.76 12.69 54.65 28.57 54.6 48a35.66 35.66 0 1071.31.25z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")no-repeat;
+    }
+
 }
