@@ -17,6 +17,26 @@
   align-self: flex-start;
 }
 
+.infoCardContainer--info-card-menu{
+  min-width: 233px;
+  min-height: 350px;
+}
+
+.infoCardTextContainer--info-card-menu{
+  align-self: flex-end;
+  height: 0;
+}
+
+.infoCardHeadline--info-card-menu{
+  font-size: 14px;
+  white-space: nowrap;
+  font-weight: 400;
+  letter-spacing: 1.4px;
+  margin-top: 15px;
+  text-align: center;
+  color: #000;
+}
+
 .infoCardContainer--info-card-home {
   max-width: 1520px;
   margin: 0 auto;

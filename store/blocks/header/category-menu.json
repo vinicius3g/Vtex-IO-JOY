@@ -25,7 +25,7 @@
       }
     }
   },
- 
+
   "menu-item#category-womanswear": {
     "props": {
       "blockClass": "menu-item-category",
@@ -166,13 +166,13 @@
       "type": "custom",
       "iconId": null,
       "highlight": false,
-         "itemProps": {
+        "itemProps": {
           "type": "internal",
           "href": "/about-us",
           "noFollow": true,
           "tagTitle": "About us",
           "text": "About us"
-       }
+      }
     }
- }
+  }
 }

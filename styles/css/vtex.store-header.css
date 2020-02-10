@@ -23,6 +23,10 @@
   font-size: 14px;
 }
 
+.styledLinkContainer--menu-item-category .styledLink--menu-item-category:hover{
+  border-bottom: 2px solid #8e8e8e;
+}
+
 .headerStickyRow--menu-header :global(.vtex-menu-2-x-styledLink){
   font-size: 18px;
   color: #000000;
