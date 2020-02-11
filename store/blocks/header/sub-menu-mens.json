@@ -4,28 +4,27 @@
             "width": "100%"
         },
         "children": [
-            "menu#category",
-            "menu#collection",
-            "menu#brands",
+            "menu#category-mens",
+            "menu#collection-mens",
+            "menu#brands-mens",
             "flex-layout.row#menu-info-card"
         ]
     },
 
-    "menu#category": {
+    "menu#category-mens": {
         "props": {
             "orientation": "vertical",
             "blockClass":"nav-categoryes"
         },
         "children": [
             "menu-item#category-colection-categories",
-            "menu-item#category-colection-dresses",
-            "menu-item#category-colection-tops",
             "menu-item#category-colection-coats",
-            "menu-item#category-colection-trousers",
-            "menu-item#category-colection-jumpsuits",
             "menu-item#category-colection-knitwear",
+            "menu-item#category-colection-shirts",
             "menu-item#category-colection-shorts",
-            "menu-item#category-colection-skirts"
+            "menu-item#category-colection-sweats",
+            "menu-item#category-colection-trousers",
+            "menu-item#category-colection-t-shirt"
         ]
     },
 
@@ -44,39 +43,6 @@
         }
             
     },
-    "menu-item#category-colection-dresses": {
-        "props": {
-            "blockClass": "menu-categories",
-            "type": "custom",
-            "iconId": null,
-            "highlight": false,
-            "itemProps": {
-                "type": "internal",
-                "href": "/apparel---accessories/clothing/",
-                "noFollow": false,
-                "tagTitle": "Dresses",
-                "text": "Dresses"
-            }
-        }
-            
-    },
-
-    "menu-item#category-colection-tops": {
-        "props": {
-            "blockClass": "menu-categories",
-            "type": "custom",
-            "iconId": null,
-            "highlight": false,
-            "itemProps": {
-                "type": "internal",
-                "href": "/apparel---accessories/clothing/",
-                "noFollow": false,
-                "tagTitle": "Tops",
-                "text": "Tops"
-            }
-        }
-    },
-
     "menu-item#category-colection-coats": {
         "props": {
             "blockClass": "menu-categories",
@@ -91,38 +57,7 @@
                 "text": "Coats & Jacktes"
             }
         }
-    },
-
-    "menu-item#category-colection-trousers": {
-        "props": {
-            "blockClass": "menu-categories",
-            "type": "custom",
-            "iconId": null,
-            "highlight": false,
-            "itemProps": {
-                "type": "internal",
-                "href": "/apparel---accessories/clothing/",
-                "noFollow": false,
-                "tagTitle": "Trousers",
-                "text": "Trousers"
-            }
-        }
-    },
-
-    "menu-item#category-colection-jumpsuits": {
-        "props": {
-            "blockClass": "menu-categories",
-            "type": "custom",
-            "iconId": null,
-            "highlight": false,
-            "itemProps": {
-                "type": "internal",
-                "href": "/apparel---accessories/clothing/",
-                "noFollow": false,
-                "tagTitle": "Jumpsuits & Playsuits",
-                "text": "Jumpsuits & Playsuits"
-            }
-        }
+            
     },
 
     "menu-item#category-colection-knitwear": {
@@ -135,8 +70,24 @@
                 "type": "internal",
                 "href": "/apparel---accessories/clothing/",
                 "noFollow": false,
-                "tagTitle": "Knitwear",
-                "text": "Knitwear"
+                "tagTitle": "Knitewear",
+                "text": "Knitewear"
+            }
+        }
+    },
+
+    "menu-item#category-colection-shirts": {
+        "props": {
+            "blockClass": "menu-categories",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/apparel---accessories/clothing/",
+                "noFollow": false,
+                "tagTitle": "Shirts",
+                "text": "Shirts"
             }
         }
     },
@@ -157,6 +108,54 @@
         }
     },
 
+    "menu-item#category-colection-sweats": {
+        "props": {
+            "blockClass": "menu-categories",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/apparel---accessories/clothing/",
+                "noFollow": false,
+                "tagTitle": "Sweats",
+                "text": "Sweats"
+            }
+        }
+    },
+
+    "menu-item#category-colection-trousers": {
+        "props": {
+            "blockClass": "menu-categories",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/apparel---accessories/clothing/",
+                "noFollow": false,
+                "tagTitle": "Trousers",
+                "text": "Trousers"
+            }
+        }
+    },
+
+    "menu-item#category-colection-t-shirt": {
+        "props": {
+            "blockClass": "menu-categories",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/apparel---accessories/clothing/",
+                "noFollow": false,
+                "tagTitle": "T-Shirts",
+                "text": "T-Shirts"
+            }
+        }
+    },
+
     "menu-item#category-colection-skirts": {
         "props": {
             "blockClass": "menu-categories",
@@ -173,15 +172,13 @@
         }
     },
 
-    "menu#collection": {
+    "menu#collection-mens": {
         "props": {
             "orientation": "vertical"
         },
         "children": [
             "menu-item#category-collection-collections",
-            "menu-item#category-collection-spring",
-            "menu-item#category-collection-autumn",
-            "menu-item#category-collection-galentine"
+            "menu-item#category-collection-spring"
         ]
     },
 
@@ -216,51 +213,16 @@
         }
     },
 
-    "menu-item#category-collection-autumn": {
-        "props": {
-            "blockClass": "menu-categories",
-            "type": "custom",
-            "iconId": null,
-            "highlight": false,
-            "itemProps": {
-                "type": "internal",
-                "href": "/apparel---accessories/eyeglasses/",
-                "noFollow": false,
-                "tagTitle": "Autumn/Winter'19",
-                "text": "Autumn/Winter'19"
-            }
-        }
-    },
-
-    "menu-item#category-collection-galentine": {
-        "props": {
-            "blockClass": "menu-categories",
-            "type": "custom",
-            "iconId": null,
-            "highlight": false,
-            "itemProps": {
-                "type": "internal",
-                "href": "/apparel---accessories/eyeglasses/",
-                "noFollow": false,
-                "tagTitle": "Galentine's Day",
-                "text": "Galentine's Day"
-            }
-        }
-    },
-
-    "menu#brands":{
+    "menu#brands-mens":{
         "props":{
             "orientation":"vertical"
-    },
+        },
 
-    "children":[
-        "menu-item#category-collection-brands",
-        "menu-item#category-collection-louche",
-        "menu-item#category-collection-loucheluxe",
-        "menu-item#category-collection-bravesoul",
-        "menu-item#category-collection-joy"
-    ]
-},
+        "children":[
+            "menu-item#category-collection-brands",
+            "menu-item#category-collection-hymn"
+        ]
+    },
 
     "menu-item#category-collection-brands": {
         "props": {
@@ -276,7 +238,7 @@
             }
         }
     },
-    "menu-item#category-collection-louche": {
+    "menu-item#category-collection-hymn": {
         "props": {
             "blockClass": "menu-categories",
             "type": "custom",
@@ -286,53 +248,8 @@
                 "type": "internal",
                 "href": "/apparel---accessories/eyeglasses/",
                 "noFollow": false,
-                "tagTitle": "Louche",
-                "text": "Louche"
-            }
-        }
-    },
-    "menu-item#category-collection-loucheluxe": {
-        "props": {
-            "blockClass": "menu-categories",
-            "type": "custom",
-            "iconId": null,
-            "highlight": false,
-            "itemProps": {
-                "type": "internal",
-                "href": "/apparel---accessories/eyeglasses/",
-                "noFollow": false,
-                "tagTitle": "Louche Lux",
-                "text": "Louche Lux"
-            }
-        }
-    },
-    "menu-item#category-collection-bravesoul": {
-        "props": {
-            "blockClass": "menu-categories",
-            "type": "custom",
-            "iconId": null,
-            "highlight": false,
-            "itemProps": {
-                "type": "internal",
-                "href": "/apparel---accessories/eyeglasses/",
-                "noFollow": false,
-                "tagTitle": "Brave Soul",
-                "text": "Brave Soul"
-            }
-        }
-    },
-    "menu-item#category-collection-joy": {
-        "props": {
-            "blockClass": "menu-categories",
-            "type": "custom",
-            "iconId": null,
-            "highlight": false,
-            "itemProps": {
-                "type": "internal",
-                "href": "/apparel---accessories/eyeglasses/",
-                "noFollow": false,
-                "tagTitle": "Joy",
-                "text": "Joy"
+                "tagTitle": "Hymn",
+                "text": "Hymn"
             }
         }
     },
@@ -354,5 +271,15 @@
             "headline":"Dresses",
             "blockClass": "info-card-menu"
         }
+    },
+
+    "submenu#category-menswear-mobile": {
+        "props": {
+            "width": "100%"
+        },
+        "children": [
+            "menu#category-mens",
+            "menu#collection-mens"
+        ]
     }
 }

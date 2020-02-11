@@ -35,3 +35,13 @@
 .flexCol--switcherMobileCol {
   width: 20%;
 }
+.stretchChildrenWidth :global(.vtex-product-list-0-x-quantity){
+  font-size: 0;
+}
+
+.stretchChildrenWidth :global(.vtex-product-list-0-x-productVariationsContainer){
+  display: none;
+}
+.flexRowContent :global(.vtex-product-list-0-x-quantitySelectorContainer){
+  display: none;
+}

@@ -354,5 +354,49 @@
             "headline":"Dresses",
             "blockClass": "info-card-menu"
         }
+    },
+
+
+    "submenu#category-womanswear-mobile": {
+        "props": {
+            "width": "100%"
+        },
+        "children": [
+            "menu#category-mobile"
+        ]
+    },
+
+    "menu#category-mobile": {
+        "props": {
+            "orientation": "vertical",
+            "blockClass":"nav-categoryes"
+        },
+        "children": [
+            "menu-item#category-colection-seeall",
+            "menu-item#category-colection-dresses",
+            "menu-item#category-colection-tops",
+            "menu-item#category-colection-coats",
+            "menu-item#category-colection-trousers",
+            "menu-item#category-colection-jumpsuits",
+            "menu-item#category-colection-knitwear",
+            "menu-item#category-colection-shorts",
+            "menu-item#category-colection-skirts"
+        ]
+    },
+
+    "menu-item#category-colection-seeall": {
+        "props": {
+            "blockClass": "categorie-header-mobile",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "noFollow": false,
+                "tagTitle": "See All",
+                "text": "See All"
+            }
+        }
+            
     }
 }

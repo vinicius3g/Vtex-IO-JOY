@@ -34,6 +34,28 @@
     border-radius: 0;
 }
 
+.closeIconButton{
+    color: #ffffff;
+}
+
+.closeIconContainer{
+    background-color: #000;;
+    display: flex;
+    max-height: 45px;
+    justify-content: space-between;
+}
+
+.closeIconContainer::before{
+    content: "My Cart";
+    color: #FFF;
+    align-items: center;
+    display: flex;
+    padding-left: 23px;
+    font-weight: 700;
+    font-family: 'raleway',sans-serif;
+}
+
+
 @media only screen and (max-width:425px){
     .minicartIconContainer{
         width: 28px;

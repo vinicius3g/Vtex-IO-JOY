@@ -1,0 +1,122 @@
+{
+    "menu#category-menu-mobile": {
+      "children": [
+        "menu-item#category-new-in-mobile",
+        "menu-item#category-womanswear-mobile",
+        "menu-item#category-meanswear-mobile",
+        "menu-item#category-acessories-mobile",
+        "menu-item#category-homeandgifs-mobile",
+        "menu-item#category-sale-mobile"
+      ]
+    },
+  
+    "menu-item#category-new-in-mobile": {
+      "props": {
+        "blockClass": "menu-item-category",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "/",
+          "noFollow": false,
+          "tagTitle": "New In",
+          "text": "New In"
+        }
+      }
+    },
+  
+    "menu-item#category-womanswear-mobile": {
+      "props": {
+        "blockClass": "menu-item-category",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "/",
+          "noFollow": false,
+          "tagTitle": "WomensWear",
+          "text": "WomensWear"
+        }
+      },
+      "blocks": [
+        "submenu#category-womanswear-mobile"
+      ]
+    },
+  
+    "menu-item#category-meanswear-mobile": {
+      "props": {
+        "blockClass": "menu-item-category",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "/",
+          "noFollow": false,
+          "tagTitle": "Menswear",
+          "text": "Menswear"
+        }
+      },
+      "blocks": [
+        "submenu#category-menswear-mobile"
+      ]
+    },
+  
+    "menu-item#category-acessories-mobile": {
+      "props": {
+        "blockClass": "menu-item-category",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "/",
+          "noFollow": false,
+          "tagTitle": "Accessories",
+          "text": "Accessories"
+        }
+      },
+      "blocks": [
+        "submenu#category-acessories-mobile"
+      ]
+    },
+  
+    "menu-item#category-homeandgifs-mobile": {
+      "props": {
+        "blockClass": "menu-item-category",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "/",
+          "noFollow": false,
+          "tagTitle": "Home & Gifts",
+          "text": "Home & Gifts"
+        }
+      },
+      "blocks": [
+        "submenu#category-gifts-mobile"
+      ]
+    },
+  
+    "menu-item#category-sale-mobile": {
+      "props": {
+        "blockClass": "menu-item-category",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "/",
+          "noFollow": false,
+          "tagTitle": "Sale",
+          "text": "Sale"
+        }
+      }
+    }
+  
+}
+  

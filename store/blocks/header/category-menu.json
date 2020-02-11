@@ -36,8 +36,8 @@
         "type": "internal",
         "href": "/home---decor/",
         "noFollow": false,
-        "tagTitle": "WomansWear",
-        "text": "WomansWear"
+        "tagTitle": "WomensWear",
+        "text": "WomensWear"
       }
     },
     "blocks": [
@@ -55,8 +55,8 @@
         "type": "internal",
         "href": "/home---decor/",
         "noFollow": false,
-        "tagTitle": "Meanswear",
-        "text": "Meanswear"
+        "tagTitle": "Menswear",
+        "text": "Menswear"
       }
     },
     "blocks": [
@@ -74,8 +74,8 @@
         "type": "internal",
         "href": "/home---decor/",
         "noFollow": false,
-        "tagTitle": "Acessories",
-        "text": "Acessories"
+        "tagTitle": "Accessories",
+        "text": "Accessories"
       }
     },
     "blocks": [
@@ -114,73 +114,6 @@
         "noFollow": false,
         "tagTitle": "Sale",
         "text": "Sale"
-      }
-    }
-  },
-
-  "menu-item#more": {
-    "props": {
-      "blockClass": "menu-item-custom-sale",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "#",
-        "noFollow": true,
-        "tagTitle": "More",
-        "text": "More"
-      }
-    },
-    "blocks": [
-      "submenu#more"
-    ]
-  },
-
-  "submenu#more": {
-    "props": {
-      "width": "100%"
-    },
-    "children": [
-      "flex-layout.row#menu-more"
-    ]
-  },
-  "flex-layout.row#menu-more": {
-    "children": [
-      "flex-layout.col#menu-more-1",
-      "flex-layout.col#menu-more-2"
-    ]
-  },
-  "flex-layout.col#menu-more-1": {
-    "children": [
-      "menu#more"
-    ]
-  },
-  "flex-layout.col#menu-more-2": {
-    "children": [
-      "info-card#home"
-    ]
-  },
-  "menu#more": {
-    "props": {
-      "orientation": "vertical"
-    },
-    "children": [
-      "menu-item#about-us"
-    ]
-  },
-"menu-item#about-us": {
-  "props": {
-      "blockClass": "menu-item-about-us",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-        "itemProps": {
-          "type": "internal",
-          "href": "/about-us",
-          "noFollow": true,
-          "tagTitle": "About us",
-          "text": "About us"
       }
     }
   }

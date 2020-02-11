@@ -91,53 +91,6 @@
       "blockClass":"button-header"
     }
   },
-
-    "minicart.v2": {
-      "children": ["minicart-base-content"]
-    },
-    "minicart-base-content": {
-      "blocks": ["minicart-empty-state"],
-      "children": ["minicart-product-list", "sticky-layout#minicart-footer"]
-    },
-    "sticky-layout#minicart-footer": {
-      "children": ["minicart-summary", "minicart-checkout-button"]
-    },
-    "minicart-product-list": {
-      "blocks": ["product-list#minicart"]
-    },
-    "product-list#minicart": {
-      "blocks": ["product-list-content-mobile"]
-    },
-    "minicart-summary": {
-      "blocks": ["checkout-summary.compact#minicart"]
-    },
-  
-    "checkout-summary.compact#minicart": {
-      "children": ["summary-totalizers#minicart"],
-      "props": {
-        "totalizersToShow": ["Items", "Discounts"]
-      }
-    },
-    "summary-totalizers#minicart": {
-      "props": {
-        "showTotal": true,
-        "showDeliveryTotal": false
-      }
-    },
-    "minicart-empty-state": {
-      "children": ["flex-layout.row#empty-state"]
-    },
-    "flex-layout.row#empty-state": {
-      "children": ["flex-layout.col#empty-state"]
-    },
-    "flex-layout.col#empty-state": {
-      "children": ["rich-text#empty-state"]
-    },
-    "rich-text#empty-state": {
-      "props": {
-        "text": "Your cart is empty!"
-      }
-    },
   
   "header-layout.mobile": {
     "children": [
@@ -186,16 +139,17 @@
 
   "menu#drawer": {
     "children": [
-      "menu-item#category-new-in",
-      "menu-item#category-womanswear",
-      "menu-item#category-meanswear",
-      "menu-item#category-acessories",
-      "menu-item#category-homeandgifs",
-      "menu-item#category-sale",
+      "menu-item#category-new-in-mobile",
+      "menu-item#category-womanswear-mobile",
+      "menu-item#category-meanswear-mobile",
+      "menu-item#category-acessories-mobile",
+      "menu-item#category-homeandgifs-mobile",
+      "menu-item#category-sale-mobile",
       "header-row#log-cart-mobile"
       
     ],
     "props": {
+      "slideDirection":"vertical",
       "orientation": "vertical",
       "blockClass":"menu-mobile"
     }
