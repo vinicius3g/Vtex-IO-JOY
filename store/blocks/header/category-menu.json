@@ -58,7 +58,10 @@
         "tagTitle": "Meanswear",
         "text": "Meanswear"
       }
-    }
+    },
+    "blocks": [
+      "submenu#category-menswear"
+    ]
   },
 
   "menu-item#category-acessories": {
@@ -74,7 +77,10 @@
         "tagTitle": "Acessories",
         "text": "Acessories"
       }
-    }
+    },
+    "blocks": [
+      "submenu#category-acessories"
+    ]
   },
 
   "menu-item#category-homeandgifs": {
@@ -90,7 +96,10 @@
         "tagTitle": "Home & Gifts",
         "text": "Home & Gifts"
       }
-    }
+    },
+    "blocks": [
+      "submenu#category-gifts"
+    ]
   },
 
   "menu-item#category-sale": {

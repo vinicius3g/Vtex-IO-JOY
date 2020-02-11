@@ -46,3 +46,6 @@
     margin: 5px 0;
 }
 
+.menuItem--menu-item-category .styledLinkContainer--menu-item-category .styledLink--menu-item-category:hover{
+    border-bottom: 2px solid #8e8e8e;
+}
