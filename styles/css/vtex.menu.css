@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+.menuContainerNav--menu-mobile{
+    width: 100%;
+}
+
+.submenu{
+    border-top: 1px solid #d6d6d6;
+    background-color: #f8f8f8;
+    min-height: 300px;
+    max-height: 500px;
+    padding: 40px 0 110px;
+    max-width: 1300px;
+    margin: 0 auto;
+    justify-content: flex-start;
+}
+
+.submenu .menuContainerNav{
+    max-width: 25%;
+    min-width: 25%;
+}
+
+.styledLink--categorie-header{
+    font-family: 'Raleway',sans-serif;
+    font-size: 18px;
+    color: #000;
+    pointer-events: none;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.menuItem--menu-categories  .styledLinkContainer--menu-categories .styledLink--menu-categories {
+    font-weight: normal;
+    font-family: 'Raleway',sans-serif;
+    font-size: 14px;
+    color: #000;
+    text-transform: capitalize;
+    display: block;
+    margin: 5px 0;
+}
+
+.menuItem--menu-item-category .styledLinkContainer--menu-item-category .styledLink--menu-item-category:hover{
+    border-bottom: 2px solid #8e8e8e;
+}
+
+.styledLink--menu-item-category{
+    font-family: "Raleway",sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+    letter-spacing: 1.6px;
+}

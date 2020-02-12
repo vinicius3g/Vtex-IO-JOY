@@ -1,153 +1,91 @@
 {
   "menu#category-menu": {
     "children": [
-      "header-spacer",
-      "header-spacer",
       "menu-item#category-new-in",
       "menu-item#category-womanswear",
       "menu-item#category-meanswear",
       "menu-item#category-acessories",
       "menu-item#category-homeandgifs",
-      "menu-item#category-sale",
-      "menu-item#category-outlet"
-      
+      "menu-item#category-sale"
     ]
   },
+
   "menu-item#category-new-in": {
     "props": {
-      "id": "menu-item-category-new-in",
+      "blockClass": "menu-item-category",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/apparel---accessories/",
+        "href": "/",
         "noFollow": false,
         "tagTitle": "New In",
         "text": "New In"
       }
-    },
-    "blocks": [
-      "submenu#category-apparel"
-    ]
-  },
-  "submenu#category-apparel": {
-    "props": {
-      "width": "auto"
-    },
-    "children": [
-      "menu#category-apparel"
-    ]
-  },
-  "menu#category-apparel": {
-    "props": {
-      "orientation": "vertical"
-    },
-    "children": [
-      "menu-item#category-apparel-clothing",
-      "menu-item#category-apparel-accessories",
-      "menu-item#category-apparel-eyeglasses"
-    ]
-  },
-  "menu-item#category-apparel-clothing": {
-    "props": {
-      "id": "menu-item-category-apparel-clothing",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/apparel---accessories/clothing/",
-        "noFollow": false,
-        "tagTitle": "Clothing",
-        "text": "Clothing"
-      }
     }
   },
-  "menu-item#category-apparel-accessories": {
+
+  "menu-item#category-womanswear": {
     "props": {
-      "id": "menu-item-category-apparel-accessories",
+      "blockClass": "menu-item-category",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/apparel---accessories/accessories/",
+        "href": "/home---decor/",
+        "noFollow": false,
+        "tagTitle": "WomensWear",
+        "text": "WomensWear"
+      }
+    },
+    "blocks": [
+      "submenu#category-womanswear"
+    ]
+  },
+
+  "menu-item#category-meanswear": {
+    "props": {
+      "blockClass": "menu-item-category",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/home---decor/",
+        "noFollow": false,
+        "tagTitle": "Menswear",
+        "text": "Menswear"
+      }
+    },
+    "blocks": [
+      "submenu#category-menswear"
+    ]
+  },
+
+  "menu-item#category-acessories": {
+    "props": {
+      "blockClass": "menu-item-category",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/home---decor/",
         "noFollow": false,
         "tagTitle": "Accessories",
         "text": "Accessories"
       }
-    }
-  },
-  "menu-item#category-apparel-eyeglasses": {
-    "props": {
-      "id": "menu-item-category-apparel-eyeglasses",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/apparel---accessories/eyeglasses/",
-        "noFollow": false,
-        "tagTitle": "Eyeglasses",
-        "text": "Eyeglasses"
-      }
-    }
+    },
+    "blocks": [
+      "submenu#category-acessories"
+    ]
   },
 
-
-
-
-
-
-  "menu-item#category-womanswear": {
-    "props": {
-      "id": "menu-item-category-home",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/home---decor/",
-        "noFollow": false,
-        "tagTitle": "WomansWear",
-        "text": "WomansWear"
-      }
-    }
-  },
-  "menu-item#category-meanswear": {
-    "props": {
-      "id": "menu-item-category-home",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/home---decor/",
-        "noFollow": false,
-        "tagTitle": "Meanswear",
-        "text": "Meanswear"
-      }
-    }
-  },
-  "menu-item#category-acessories": {
-    "props": {
-      "id": "menu-item-category-home",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/home---decor/",
-        "noFollow": false,
-        "tagTitle": "Home & Decor",
-        "text": "Home & Decor"
-      }
-    }
-  },
   "menu-item#category-homeandgifs": {
     "props": {
-      "id": "menu-item-category-home",
+      "blockClass": "menu-item-category",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -155,103 +93,27 @@
         "type": "internal",
         "href": "/home---decor/",
         "noFollow": false,
-        "tagTitle": "Home & Decor",
-        "text": "Home & Decor"
-      }
-    }
-  },
-  "menu-item#category-sale": {
-    "props": {
-      "id": "menu-item-category-home",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/home---decor/",
-        "noFollow": false,
-        "tagTitle": "Acessories",
-        "text": "Acessories"
-      }
-    }
-  },
-  "menu-item#category-outlet": {
-    "props": {
-      "id": "menu-item-category-home",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/home---decor/",
-        "noFollow": false,
-        "tagTitle": "Outlet",
-        "text": "Outlet"
-      }
-    }
-  },
-  "menu-item#more": {
-    "props": {
-      "id": "menu-item-custom-sale",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "#",
-        "noFollow": true,
-        "tagTitle": "More",
-        "text": "More"
+        "tagTitle": "Home & Gifts",
+        "text": "Home & Gifts"
       }
     },
     "blocks": [
-      "vtex.menu@2.x:submenu#more"
+      "submenu#category-gifts"
     ]
   },
-  "vtex.menu@2.x:submenu#more": {
+
+  "menu-item#category-sale": {
     "props": {
-      "width": "100%"
-    },
-    "children": [
-      "flex-layout.row#menu-more"
-    ]
-  },
-  "flex-layout.row#menu-more": {
-    "children": [
-      "flex-layout.col#menu-more-1",
-      "flex-layout.col#menu-more-2"
-    ]
-  },
-  "flex-layout.col#menu-more-1": {
-    "children": [
-      "vtex.menu@2.x:menu#more"
-    ]
-  },
-  "flex-layout.col#menu-more-2": {
-    "children": [
-      "info-card#home"
-    ]
-  },
-  "vtex.menu@2.x:menu#more": {
-    "props": {
-      "orientation": "vertical"
-    },
-    "children": [
-      "menu-item#about-us"
-    ]
-  },
-  "menu-item#about-us": {
-    "props": {
-      "id": "menu-item-about-us",
+      "blockClass": "menu-item-category",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/about-us",
-        "noFollow": true,
-        "tagTitle": "About us",
-        "text": "About us"
+        "href": "/home---decor/",
+        "noFollow": false,
+        "tagTitle": "Sale",
+        "text": "Sale"
       }
     }
   }

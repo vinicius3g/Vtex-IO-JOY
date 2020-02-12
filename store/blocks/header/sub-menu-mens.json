@@ -1,0 +1,285 @@
+{
+    "submenu#category-menswear": {
+        "props": {
+            "width": "100%"
+        },
+        "children": [
+            "menu#category-mens",
+            "menu#collection-mens",
+            "menu#brands-mens",
+            "flex-layout.row#menu-info-card"
+        ]
+    },
+
+    "menu#category-mens": {
+        "props": {
+            "orientation": "vertical",
+            "blockClass":"nav-categoryes"
+        },
+        "children": [
+            "menu-item#category-colection-categories",
+            "menu-item#category-colection-coats",
+            "menu-item#category-colection-knitwear",
+            "menu-item#category-colection-shirts",
+            "menu-item#category-colection-shorts",
+            "menu-item#category-colection-sweats",
+            "menu-item#category-colection-trousers",
+            "menu-item#category-colection-t-shirt"
+        ]
+    },
+
+    "menu-item#category-colection-categories": {
+        "props": {
+            "blockClass": "categorie-header",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "noFollow": false,
+                "tagTitle": "Categories",
+                "text": "Categories"
+            }
+        }
+            
+    },
+    "menu-item#category-colection-coats": {
+        "props": {
+            "blockClass": "menu-categories",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/apparel---accessories/clothing/",
+                "noFollow": false,
+                "tagTitle": "Coats & Jacktes",
+                "text": "Coats & Jacktes"
+            }
+        }
+            
+    },
+
+    "menu-item#category-colection-knitwear": {
+        "props": {
+            "blockClass": "menu-categories",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/apparel---accessories/clothing/",
+                "noFollow": false,
+                "tagTitle": "Knitewear",
+                "text": "Knitewear"
+            }
+        }
+    },
+
+    "menu-item#category-colection-shirts": {
+        "props": {
+            "blockClass": "menu-categories",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/apparel---accessories/clothing/",
+                "noFollow": false,
+                "tagTitle": "Shirts",
+                "text": "Shirts"
+            }
+        }
+    },
+
+    "menu-item#category-colection-shorts": {
+        "props": {
+            "blockClass": "menu-categories",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/apparel---accessories/clothing/",
+                "noFollow": false,
+                "tagTitle": "Shorts",
+                "text": "Shorts"
+            }
+        }
+    },
+
+    "menu-item#category-colection-sweats": {
+        "props": {
+            "blockClass": "menu-categories",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/apparel---accessories/clothing/",
+                "noFollow": false,
+                "tagTitle": "Sweats",
+                "text": "Sweats"
+            }
+        }
+    },
+
+    "menu-item#category-colection-trousers": {
+        "props": {
+            "blockClass": "menu-categories",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/apparel---accessories/clothing/",
+                "noFollow": false,
+                "tagTitle": "Trousers",
+                "text": "Trousers"
+            }
+        }
+    },
+
+    "menu-item#category-colection-t-shirt": {
+        "props": {
+            "blockClass": "menu-categories",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/apparel---accessories/clothing/",
+                "noFollow": false,
+                "tagTitle": "T-Shirts",
+                "text": "T-Shirts"
+            }
+        }
+    },
+
+    "menu-item#category-colection-skirts": {
+        "props": {
+            "blockClass": "menu-categories",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/apparel---accessories/clothing/",
+                "noFollow": false,
+                "tagTitle": "Skirts",
+                "text": "Skirts"
+            }
+        }
+    },
+
+    "menu#collection-mens": {
+        "props": {
+            "orientation": "vertical"
+        },
+        "children": [
+            "menu-item#category-collection-collections",
+            "menu-item#category-collection-spring"
+        ]
+    },
+
+    "menu-item#category-collection-collections": {
+        "props": {
+            "blockClass": "categorie-header",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "noFollow": false,
+                "tagTitle": "Collections",
+                "text": "Collections"
+            }
+        }
+    },
+
+    "menu-item#category-collection-spring": {
+        "props": {
+            "blockClass": "menu-categories",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/apparel---accessories/accessories/",
+                "noFollow": false,
+                "tagTitle": "Spring/Summer'20",
+                "text": "Spring/Summer'20"
+            }
+        }
+    },
+
+    "menu#brands-mens":{
+        "props":{
+            "orientation":"vertical"
+        },
+
+        "children":[
+            "menu-item#category-collection-brands",
+            "menu-item#category-collection-hymn"
+        ]
+    },
+
+    "menu-item#category-collection-brands": {
+        "props": {
+            "blockClass": "categorie-header",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "noFollow": false,
+                "tagTitle": "Brands",
+                "text": "Brands"
+            }
+        }
+    },
+    "menu-item#category-collection-hymn": {
+        "props": {
+            "blockClass": "menu-categories",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/apparel---accessories/eyeglasses/",
+                "noFollow": false,
+                "tagTitle": "Hymn",
+                "text": "Hymn"
+            }
+        }
+    },
+
+    "flex-layout.row#menu-info-card":{
+        "props":{
+            "blockClass":"infocard-header-menu"
+        },
+        "children":[
+            "info-card#menu"
+        ] 
+    },
+
+    "info-card#menu": {
+        "props": {
+            "isFullModeStyle":true,
+            "imageUrl": "/arquivos/hero-banner.jpg",
+            "callToActionMode": "none",
+            "headline":"Dresses",
+            "blockClass": "info-card-menu"
+        }
+    },
+
+    "submenu#category-menswear-mobile": {
+        "props": {
+            "width": "100%"
+        },
+        "children": [
+            "menu#category-mens",
+            "menu#collection-mens"
+        ]
+    }
+}

@@ -1,0 +1,254 @@
+{
+    "submenu#category-gifts": {
+        "props": {
+            "width": "100%"
+        },
+        "children": [
+            "menu#category-gifs",
+            "menu#brands-gifs",
+            "menu#empty-gifs",
+            "flex-layout.row#menu-info-card"
+        ]
+    },
+
+    "menu#category-gifs": {
+        "props": {
+            "orientation": "vertical",
+            "blockClass":"nav-categoryes"
+        },
+        "children": [
+            "menu-item#category-colection-categories",
+            "menu-item#category-colection-gifts",
+            "menu-item#category-colection-homewares",
+            "menu-item#category-colection-beaulty",
+            "menu-item#category-colection-novelty",
+            "menu-item#category-colection-games",
+            "menu-item#category-colection-home",
+            "menu-item#category-colection-photo",
+            "menu-item#category-colection-candles"
+        ]
+    },
+
+    "menu-item#category-colection-categories": {
+        "props": {
+            "blockClass": "categorie-header",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "noFollow": false,
+                "tagTitle": "Categories",
+                "text": "Categories"
+            }
+        }
+            
+    },
+    "menu-item#category-colection-gifts": {
+        "props": {
+            "blockClass": "menu-categories",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/apparel---accessories/clothing/",
+                "noFollow": false,
+                "tagTitle": "Gifts",
+                "text": "Gifts"
+            }
+        }
+            
+    },
+
+    "menu-item#category-colection-homewares": {
+        "props": {
+            "blockClass": "menu-categories",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/apparel---accessories/clothing/",
+                "noFollow": false,
+                "tagTitle": "Homewares",
+                "text": "Homewares"
+            }
+        }
+    },
+
+    "menu-item#category-colection-beaulty": {
+        "props": {
+            "blockClass": "menu-categories",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/apparel---accessories/clothing/",
+                "noFollow": false,
+                "tagTitle": "Beauty & Wellness",
+                "text": "Beauty & Wellness"
+            }
+        }
+    },
+
+    "menu-item#category-colection-novelty": {
+        "props": {
+            "blockClass": "menu-categories",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/apparel---accessories/clothing/",
+                "noFollow": false,
+                "tagTitle": "Novelty Gifts",
+                "text": "Novelty Gifts"
+            }
+        }
+    },
+
+    "menu-item#category-colection-games": {
+        "props": {
+            "blockClass": "menu-categories",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/apparel---accessories/clothing/",
+                "noFollow": false,
+                "tagTitle": "Games & Toys",
+                "text": "Games & Toys"
+            }
+        }
+    },
+
+    "menu-item#category-colection-home": {
+        "props": {
+            "blockClass": "menu-categories",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/apparel---accessories/clothing/",
+                "noFollow": false,
+                "tagTitle": "Home Acessories",
+                "text": "Home Acessories"
+            }
+        }
+    },
+
+    "menu-item#category-colection-photo": {
+        "props": {
+            "blockClass": "menu-categories",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/apparel---accessories/clothing/",
+                "noFollow": false,
+                "tagTitle": "Photo Frames",
+                "text": "Photo Frames"
+            }
+        }
+    },
+
+    "menu-item#category-colection-candles": {
+        "props": {
+            "blockClass": "menu-categories",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/apparel---accessories/clothing/",
+                "noFollow": false,
+                "tagTitle": "Candles",
+                "text": "Candles"
+            }
+        }
+    },
+
+    "menu#brands-gifs":{
+        "props":{
+            "orientation":"vertical"
+    },
+
+    "children":[
+        "menu-item#category-collection-brands",
+        "menu-item#category-collection-joy"
+    ]
+},
+
+    "menu-item#category-collection-brands": {
+        "props": {
+            "blockClass": "categorie-header",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "noFollow": false,
+                "tagTitle": "Brands",
+                "text": "Brands"
+            }
+        }
+    },
+    "menu#empty-gifs":{
+            "props":{
+                "orientation":"vertical"
+        },
+
+        "children":[
+            "menu-item#empty"
+        ]
+    },
+
+    "menu-item#empty": {
+        "props": {
+            "blockClass": "categorie-header",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "noFollow": false,
+                "tagTitle": "",
+                "text": ""
+            }
+        }
+    },
+   
+    "flex-layout.row#menu-info-card":{
+        "props":{
+            "blockClass":"infocard-header-menu"
+        },
+        "children":[
+            "info-card#menu"
+        ] 
+    },
+
+    "info-card#menu": {
+        "props": {
+            "isFullModeStyle":true,
+            "imageUrl": "/arquivos/hero-banner.jpg",
+            "callToActionMode": "none",
+            "headline":"Dresses",
+            "blockClass": "info-card-menu"
+        }
+    },
+
+    "submenu#category-gifts-mobile": {
+        "props": {
+            "width": "100%"
+        },
+        "children": [
+            "menu#category-gifs",
+            "menu#brands-gifs"
+        ]
+    }
+}

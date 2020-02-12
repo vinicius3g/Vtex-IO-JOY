@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:700&display=swap');
+
+:global(.vtex-render-runtime-8-x-loadingBarAnimation){
+  background-color:#000000;
+}
+
+.headerRowContainer--notification-mobile{
+  display: flex;
+  justify-content: center;
+}
+
 .headerRow--menu-link :global(.vtex-menu-2-x-styledLink) {
   color: #ffffff;
   font-size: 14px;
@@ -12,22 +23,33 @@
   font-size: 14px;
 }
 
-.headerRow--main-header-mobile .headerRowBackground {
-  padding: 10px 0px;
-  background-color: #F0F0F0;
-}
-
-.headerStickyRow--menu-header{
-  display: flex;
-  justify-content: center;
-}
-
 .headerStickyRow--menu-header :global(.vtex-menu-2-x-styledLink){
-  font-family: 'Raleway',sans-serif;
   font-size: 18px;
-  font-weight: 700;
-  line-height: 0.4;
-  letter-spacing: 1.8px;
-  text-align: center;
   color: #000000;
+  font-family: 'Raleway',sans-serifa;
+  font-weight: 700;
+  text-transform: capitalize;
+  border-bottom: 2px solid transparent;
+  display: block;
+  padding: 0 15px;
+}
+
+@media only screen and (max-width:1024px){
+  .headerRowBackground--main-header-mobile{
+    background-color: #ffffff;
+  }
+
+  .headerRowBackground--search-header{
+    background-color: #dcdcdc;
+    max-height: 40px;
+  }
+  .headerRowContainer--search-header{
+    justify-content: center;
+  }
+  .headerRowContainer--log-cart-mobile{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 25px 25px 0;
+  }
 }

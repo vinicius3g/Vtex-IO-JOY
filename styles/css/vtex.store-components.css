@@ -1,10 +1,5 @@
-.notificationBarContainer {
-  font-size: 12px;
-  font-family: 'Raleway',sans-serif;
-  font-weight: 700;
-  color: #000000;
-  background-color: #fff;
-}
+@import url('https://fonts.googleapis.com/css?family=Raleway:700&display=swap');
+
 :global(.vtex-input-prefix__group){
   border: 1px solid #000000;
   border-radius: 0;
@@ -13,13 +8,33 @@
 }
 
 .logoImage--logo-main-header {
-  width: 90px;
-  height: 90px;
+  max-width: 90px;
+  max-height: 90px;
 }
 
 .searchBarContainer {
   max-width: 300px;
   align-self: flex-start;
+}
+
+.infoCardContainer--info-card-menu{
+  min-width: 233px;
+  min-height: 350px;
+}
+
+.infoCardTextContainer--info-card-menu{
+  align-self: flex-end;
+  height: 0;
+}
+
+.infoCardHeadline--info-card-menu{
+  font-size: 14px;
+  white-space: nowrap;
+  font-weight: 400;
+  letter-spacing: 1.4px;
+  margin-top: 15px;
+  text-align: center;
+  color: #000;
 }
 
 .infoCardContainer--info-card-home {
@@ -101,5 +116,29 @@
   .imageElement--storePrint {
     margin-bottom: 0px;
     max-height: 600px;
+  }
+}
+
+@media only screen and (max-width:1024px){
+  .logoImage--logo-mobile{
+    max-width: 40px;
+    max-height: 40px;
+  }
+  .container{
+    padding: 0 15px;
+  }
+
+  .searchBarContainer{
+    padding: 0;
+  }
+  :global(.vtex-input-prefix__group ){
+    border: none;
+  }
+
+  :global(.vtex-styleguide-9-x-hideDecorators){
+    background: #0000;
+  }
+  :global(.vtex-input__prefix ){
+    background: #0000;
   }
 }
